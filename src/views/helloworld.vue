@@ -1,11 +1,11 @@
 <template>
-  <div class="hello">
+  <v-app class="hello" :enableScroll="false" title="首页">
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li @click="testRoutr">
-        Core Docs
+        进入第二个页面
       </li>
       <li>
         <a
@@ -76,7 +76,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </v-app>
 </template>
 
 <script>

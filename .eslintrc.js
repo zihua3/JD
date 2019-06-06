@@ -41,5 +41,20 @@ module.exports = {
     "semi": 0,
     // 强制分号之前和之后使用一致的空格
     "semi-spacing": 0,
+    // 需要或不允许开始注释的空格
+    "spaced-comment": 0,
+    // 不允许多个空行
+    "no-multiple-empty-lines": [2, {"max": 2}],
+    // 强制使用一致的缩进
+    "indent": 0,
+    //  禁用行尾空格
+    "no-trailing-spaces": 0,
+    // 不允许空格和 tab 混合缩进
+    "no-mixed-spaces-and-tabs": 2,
+    //强制使用一致的缩进 第二个参数为 "tab" 时，会使用tab，
+    // if while function 后面的{必须与if在同一行，java风格。
+    "brace-style": [2, "1tbs", {"allowSingleLine": true}],
+    // 允许所有标签
+    "no-tabs":"off"
   }
 }
