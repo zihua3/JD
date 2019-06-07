@@ -1,6 +1,6 @@
 <template>
   <v-app class="hello" :enableScroll="false" title="首页">
-    <img src="../assets/logo.png">
+    <img src="../../static/images/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>

@@ -1,7 +1,7 @@
 <template>
   <v-app class="hello" title="第二个页面">
     <template>
-      <h1>{{ msg }}</h1>
+      <h1>{{ msg | dateTime}}</h1>
       <h2>Essential Links</h2>
       <ul>
         <li>
@@ -90,7 +90,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 165566565656
     }
   }
 }

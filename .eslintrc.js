@@ -55,6 +55,14 @@ module.exports = {
     // if while function 后面的{必须与if在同一行，java风格。
     "brace-style": [2, "1tbs", {"allowSingleLine": true}],
     // 允许所有标签
-    "no-tabs":"off"
+    "no-tabs":"off",
+    // 要求操作符周围有空格
+    "space-infix-ops": 0,
+    // 文件末尾强制换行
+    "eol-last": 2,
+    // 要求箭头函数的参数使用圆括号
+    "arrow-parens": 2,
+    // 强制在一元操作符前后使用一致的空格
+    "space-unary-ops": [2, {"words": true, "nonwords": false}],
   }
 }
