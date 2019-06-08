@@ -26,18 +26,24 @@
 									<slot></slot>
 							</dl>
 					</div>
+			<!-- 底部导航 -->
+			<v-nav v-if="isFooter"></v-nav>
 			</div>
 		</nut-scroller>
 
 		<template v-else>
 			<slot></slot>
+			<!-- 底部导航 -->
+			<v-nav v-if="isFooter"></v-nav>
 		</template>
 	</div>
 </template>
 <script>
 import { clearTimeout, setTimeout } from 'timers';
+import VNav from './v-nav';
 	export default {
 		name: "v-app",
+		components: {VNav},
 		props: {
 			// 页面标题
       title: {
@@ -48,7 +54,12 @@ import { clearTimeout, setTimeout } from 'timers';
       enableScroll: {
         type: Boolean,
         default: true
-      },
+			},
+			// 是否启动底部导航栏
+			isFooter: {
+				type: Boolean,
+        default: false
+			}
 		},
 		data() {
 			return {
