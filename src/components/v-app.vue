@@ -65,7 +65,7 @@ import VNav from './v-nav';
 			return {
 				isLoading: false,
 				times: null,
-			}
+			};
 		},
 		watch: {
       title: {
@@ -99,6 +99,6 @@ import VNav from './v-nav';
 				});
 			}
 		}
-	}
+	};
 </script>
 

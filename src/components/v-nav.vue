@@ -55,6 +55,6 @@
 <script>
   export default {
     name: 'v-nav', 
-  }
+  };
 </script>
 

@@ -26,4 +26,4 @@ export default {
     };
     return Object.assign(route, configs);
   }
-}
+};

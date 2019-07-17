@@ -234,4 +234,4 @@ export default {
     let ts = d2.toDate().getTime() - d1.toDate().getTime();
     return this.duration(ts);
   },
-}
+};
