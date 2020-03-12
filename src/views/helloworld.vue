@@ -6,7 +6,7 @@
     <ul>
       <i class="iconfont icon-gouwuche"></i>
       <li @click="testRoutr">
-        进入第二个页面
+        进入第二个页面33
       </li>
       <li>
         <a
