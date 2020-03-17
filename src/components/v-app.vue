@@ -13,29 +13,11 @@
 
 <template>
   <div class="v-app">
-		<nut-scroller
-			:is-un-more="true" 
-			:is-loading="isLoading"
-			:type="'vertical'"
-			@loadMore="loadMoreVert"
-			@pulldown="pulldown"
-			v-if="enableScroll">
-			<div slot="list" class="nut-vert-list-panel">
-					<div class="nut-vert-list-item">
-							<dl class="nut-scroller-item-info">
-									<slot></slot>
-							</dl>
-					</div>
-			<!-- 底部导航 -->
-			<v-nav v-if="isFooter"></v-nav>
-			</div>
-		</nut-scroller>
-
-		<template v-else>
-			<slot></slot>
-			<!-- 底部导航 -->
-			<v-nav v-if="isFooter"></v-nav>
-		</template>
+	<template>
+		<slot></slot>
+		<!-- 底部导航 -->
+		<v-nav v-if="isFooter"></v-nav>
+	</template>
 	</div>
 </template>
 <script>
@@ -50,15 +32,10 @@ import VNav from './v-nav';
         type: String,
         default: ""
       },
-			// 是否启用nut-scroll，默认启用
-      enableScroll: {
-        type: Boolean,
-        default: true
-			},
-			// 是否启动底部导航栏
+			// 是否启动顶部导航栏
 			isFooter: {
 				type: Boolean,
-        default: false
+        default: true
 			}
 		},
 		data() {

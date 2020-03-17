@@ -10,7 +10,7 @@
 <style scoped>
   .v-nav{
     position: fixed;
-    bottom:  0;
+    top:  0;
     display: flex;
     justify-content: space-between;
     align-items: center;

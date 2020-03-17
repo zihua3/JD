@@ -1,5 +1,5 @@
 <template>
-  <v-app class="hello" :enableScroll="false" :isFooter="true" title="首页">
+  <v-app class="hello" title="首页">
     <img src="../../public/images/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>

@@ -1,7 +1,7 @@
 /**
  * Gulp前端管理任务
  *
- * @author huchiwei
+ * @author lijj
  * @create 2019-07-17
  */
 const gulp = require('gulp');
